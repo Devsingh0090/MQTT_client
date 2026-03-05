@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Server-side MQTT Client</title>
+    <link rel="stylesheet" href="/static/client.css">
+  </head>
+  <body>
+    <main>
+      <h1>Send single ID (server-side publish)</h1>
+      <form id="pubForm">
+        <p>Server will publish the provided ID using server-side MQTT defaults.</p>
+        <label>ID to send
+          <input id="id" name="id" placeholder="enter id">
+        </label>
+        <button type="submit">Send via Server</button>
+      </form>
+      <div id="status"></div>
+    </main>
+    <script src="/static/client.js"></script>
+  </body>
+  </html>
